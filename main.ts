@@ -14,7 +14,12 @@ function onButtonPressed() {
     outputSpan.innerHTML = calculateDistance(Number.parseFloat(latInput.value), Number.parseFloat(longInput.value), serverLat, serverLong).toString();
 }
 function calculateDistance(userLat: number, userLong: number, issLat: number, issLong: number): number {
-    return 0;
+    userLat /= 180 / Math.PI;
+    userLong /= 180 / Math.PI;
+    issLat /= 180 / Math.PI;
+    issLong /= 180 / Math.PI;
+    let distance = 6378.1 * Math.acos(Math.sin(userLat) * Math.sin(issLat) + Math.cos(userLat) * Math.cos(issLat) * Math.cos(issLong - userLong));
+    return distance;
 }
 function setTimer() {
     setTimeout(() => {
