@@ -1,1 +1,14 @@
-js
+# Developer tools' files
+.lite_workspace.lua
+
+# Javascript
+/resources/js
+
+# Neutralinojs binaries and builds
+/bin
+/dist
+/.tmp
+
+# Neutralinojs related files
+.storage
+*.log

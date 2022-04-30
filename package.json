@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "start": "tsc && neu run",
+        "build": "tsc && neu build",
+        "publish": "tsc && neu build --release"
+    }
+}
