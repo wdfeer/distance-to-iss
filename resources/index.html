@@ -8,7 +8,14 @@
     <title>distance-to-iss</title>
 </head>
 
-<body>
+<body style="text-align: center;">
+    <div class="server-data">
+        ISS Latitude:
+        <span id="server-lat">0</span><br>
+        ISS Longitude:
+        <span id="server-long">0</span>
+    </div>
+    <hr>
     <div class="user-data">
         <label for="lat">Latitude:</label>
         <input type="number" name="lat" id="lat"><br>
@@ -17,15 +24,8 @@
         <input type="button" value="Submit" onclick="onButtonPressed()">
     </div>
     <hr>
-    <div class="server-data">
-        ISS Latitude:
-        <span id="server-lat">0</span><br>
-        ISS Longitude:
-        <span id="server-long">0</span>
-    </div>
-    <hr>
     <div class="output">
-        <b>Your distance to the ISS (over a spherical Earth) is <span id="result">0</span> km</b>
+        <b>Your distance to the ISS (over a spherical Earth) is <br><span id="result">0</span> km</b>
     </div>
     <script src="./js/main.js"></script>
 </body>
