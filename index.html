@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>distance-to-iss</title>
+</head>
+
+<body>
+    <div class="user-data">
+        <label for="lat">Latitude:</label>
+        <input type="number" name="lat" id="lat"><br>
+        <label for="long">Longitude:</label>
+        <input type="number" name="long" id="long"><br>
+        <input type="button" value="Submit" onclick="onButtonPressed()">
+    </div>
+    <hr>
+    <div class="server-data">
+        ISS Latitude:
+        <span id="server-lat">0</span><br>
+        ISS Longitude:
+        <span id="server-long">0</span>
+    </div>
+    <hr>
+    <div class="output">
+        <b>Your distance to the ISS is <span id="result">0</span> km</b>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
